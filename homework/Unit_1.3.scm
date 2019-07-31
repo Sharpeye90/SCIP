@@ -1,0 +1,6 @@
+(define (most_vulenerable_sum_of_two a b c)
+	(if (and (> a b) (> b c))
+	      (+ (* a a) (* b b))
+	      (if (> a b) 
+		(+ (* a a) (* c c))
+		(+ (* b b) (* c c)))))
